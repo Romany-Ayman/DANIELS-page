@@ -1,0 +1,409 @@
+:root {
+  --color-b: #748392;
+}
+::selection {
+  color: #0e80f2;
+  background-color: #748392;
+}
+p {
+  color: #748392;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  /* font-weight: 800; */
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+h2 {
+  font-weight: bold;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  /* font-weight: 400; */
+  font-style: normal;
+}
+.main-nav .navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.main-nav .navbar .navbar-brand {
+  font-weight: 900;
+  font-size: 30px;
+}
+.main-nav .navbar .container .nav-item {
+  position: relative;
+  margin-left: 5px;
+}
+.main-nav .navbar .container .nav-item::after {
+  content: "";
+  width: 80%;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.main-nav .navbar .container .nav-item:hover::after {
+  left: 0;
+  opacity: 1;
+}
+.main-nav .navbar .container .nav-item .nav-link.active {
+  color: #ffa500;
+}
+.main-nav .navbar .container .nav-item .nav-link.active::after {
+  content: "";
+  width: 80%;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+
+  left: 0;
+  transition: all 0.5s;
+}
+
+.main-nav .navbar .container .nav-item .nav-link:hover {
+  color: #ffa500;
+}
+
+/* __________________________________________home___________________ */
+.home {
+  background-image: url(../images/imgs/bg.jpg);
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.42);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.tetel h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+.text-tt {
+  font-size: 50px;
+}
+.text-de {
+  font-weight: 400;
+}
+.home .container-fluid .text {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icone {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.icone .d-icon {
+  border-radius: 50%;
+  background-color: #01111c;
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+.icone .d-icon i {
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* -----------about--_____________________________________________________________-------- */
+.about {
+  background-color: #ffffff;
+}
+.about .sh1 .img {
+  position: relative;
+  background-color: aqua;
+  z-index: 2;
+}
+.about .container .row .sh1 .img::after {
+  content: "";
+  background-image: url(../images/imgs/dots.png);
+  /* background-color: #01111C; */
+  z-index: -1;
+  background-position: center;
+
+  background-repeat: repeat;
+
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 60%;
+  left: -10%;
+}
+.about .container .row .text-abuot {
+  margin-top: 30px;
+}
+.row .my-button {
+  background-color: #01111c;
+}
+.row .my-button:hover {
+  background-color: #fff;
+  color: #01111c;
+}
+/* ------------------srvices----____________________________________________________----------- */
+.Servives {
+  background-color: #f7f7f7;
+}
+.texes-sevives::after {
+  content: "";
+  background-image: url(../images/imgs/dots.png);
+  /* background-color: #01111c; */
+  z-index: 1;
+  background-position: center;
+
+  background-repeat: repeat;
+  opacity: 0.7;
+
+  position: absolute;
+  width: 20%;
+  height: 50%;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Servives .container .row .card-servives .sh2 {
+  background-color: white;
+}
+.icone-serv {
+  border-radius: 50%;
+  position: relative;
+  height: 70px;
+  width: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f4f4f4;
+  transition: all 1s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.icone-serv i {
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card-servives:hover .icone-serv {
+  background-color: #01111c;
+  color: #fff;
+}
+.Servives .container .row .card-servives .card-body {
+  width: 75%;
+  margin: auto;
+}
+/* -----------------Portfolio.-------------------------------------------------------------------- */
+.Portfolio .container .navs .nav-link {
+  position: relative;
+  background-color: transparent;
+  color: #01111c;
+}
+.Portfolio .container .text-po {
+  position: relative;
+  /* background-color: #09c; */
+}
+.Portfolio .container .text-po::after {
+  content: "";
+  background-image: url(../images/imgs/dots.png);
+  /* background-color: #01111C; */
+  z-index: 1;
+  background-position: center;
+
+  background-repeat: repeat;
+  opacity: 0.7;
+
+  position: absolute;
+  width: 20%;
+  height: 50%;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Portfolio .container .row .icone {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #01111c;
+  color: #fff;
+  position: relative;
+  transition: all 1s;
+}
+.Portfolio .container .row .icone i {
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Portfolio .container .row .icone:hover {
+  background-color: #fff;
+  color: #01111c;
+}
+.Portfolio .container .row .navs-image {
+  position: relative;
+  transition: all 1s;
+}
+.Portfolio .container .row .navs-image .bage-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: #ffffff;
+  padding: 30px;
+  /* border: 20px solid transparent; */
+}
+.bage-hover {
+  transition: all 1s;
+}
+.Portfolio .container .row .navs-image:hover .bage-hover {
+  opacity: 1;
+  top: 10px;
+  right: 20px;
+  left: 20px;
+  bottom: 10px;
+}
+
+.cont-icone {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+/* ---------------------seldar---------------------------------------------------------- */
+.cont {
+  background-color: #f7f7f7;
+}
+.text-testimo h2 {
+  font-weight: bold;
+}
+.text-testimo::after {
+  content: "";
+  background-image: url(../images/imgs/dots.png);
+  /* background-color: #01111C; */
+  z-index: 1;
+  background-position: center;
+
+  background-repeat: repeat;
+  opacity: 0.7;
+
+  position: absolute;
+  width: 20%;
+  height: 50%;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sledar .container-fluid .back .carousel-inner .img-iteam {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: -10%;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: aqua;
+}
+/* --------------------------------batwen------------------------------------------------------- */
+.icone-batwen .iconee i {
+  font-size: 50px;
+}
+.icone-batwen .iconee {
+  padding: 30px;
+}
+/* -----------team------------------------------------------------------------------ */
+.team {
+  background-color: #f7f7f7;
+}
+.team .card-1 img {
+  transition: all 1s;
+}
+.team .card-1 .img {
+  overflow: hidden;
+}
+.team .card-1:hover img {
+  scale: 1.1;
+}
+
+.team .img:hover .hove {
+  opacity: 1;
+  transform: rotatey(360deg);
+}
+
+.hove {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  background-color: #f6f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.hove .d-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 2px rgba(0, 0, 0, 0.953);
+  background-color: rgba(0, 0, 0, 0.953);
+  position: relative;
+  margin-left: 10px;
+  transition: all 1s;
+}
+.hove .d-icon i {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hove .d-icon:hover {
+  background-color: #fff;
+}
+
+.hove .d-icon:hover i {
+  color: #01111c;
+}
+/* ----------------------------contact----------------------------- */
+.Contact .icone-me .icone-contact .icone-serv {
+  background-color: #f4f4f4;
+}
+.Contact .icone-me .icone-contact:hover .icone-serv {
+  background-color: #01111c;
+  color: #fff;
+}
+.form-control {
+  background-color: #f4f4f4;
+}
